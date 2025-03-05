@@ -1,0 +1,103 @@
+@use '../../../styles/variables.scss' as variables;
+
+.modal {
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  overflow-y: scroll;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  transition: all 0.4s ease-in-out;
+  .modalContentWrap {
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 50%;
+    position: relative;
+    top: 51%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 1s cubic-bezier(0.2, 0.8, 0.4, 1);
+    width: 100%;
+    .modalContent {
+      background-color: variables.$primary-color;
+      border-radius: 6px;
+      color: variables.$text-color;
+      font-size: 0.8rem;
+      width: 30%;
+      .modalHeader {
+        border-bottom: 1px solid variables.$primary-color-darker;
+        display: flex;
+        padding: 0;
+        h3 {
+          flex-grow: 1;
+          font-size: 1rem;
+          margin: 0;
+          padding: 10px;
+          text-align: center;
+        }
+        button {
+          background: none;
+          border: none;
+          color: #888181;
+          cursor: pointer;
+          font-size: 0.8rem;
+          height: 42px;
+          margin: 0;
+          position: relative;
+          top: 1px;
+          width: 40px;
+          > span {
+            &:hover {
+              color: variables.$primary-color;
+            }
+          }
+        }
+        [class^='icon-'],
+        [class*=' icon-'] {
+          font-size: 0.8rem;
+          &:hover {
+            color: rgba(0, 0, 0, 0.8);
+          }
+        }
+      }
+      .modalBody {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@keyframes popin {
+  from {
+    transform: scale(0.3);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .modal {
+    .modalContentWrap {
+      .modalContent {
+        width: 40%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .modal {
+    .modalContentWrap {
+      .modalContent {
+        width: 90%;
+      }
+    }
+  }
+}

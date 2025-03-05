@@ -1,0 +1,43 @@
+@use '../../../../styles/variables.scss' as variables;
+
+.referralItem {
+  align-items: center;
+  border-top: 1px solid #000;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10px;
+  .givenName {
+    width: 25%;
+  }
+  .surname {
+    width: 20%;
+  }
+  .email {
+    width: 25%;
+  }
+  .phone {
+    width: 20%;
+  }
+  .actions {
+    width: 10%;
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      [class^='icon-'],
+      [class*=' icon-'] {
+        &:hover {
+          color: gray !important;
+        }
+      }
+      &:nth-child(2) {
+        [class^='icon-'],
+        [class*=' icon-'] {
+          &:hover {
+            color: red !important;
+          }
+        }
+      }
+    }
+  }
+}

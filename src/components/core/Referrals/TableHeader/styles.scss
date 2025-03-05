@@ -1,0 +1,29 @@
+@use '../../../../styles//variables.scss' as variables;
+
+.tableHeader {
+  align-items: center;
+  border-bottom: 1px solid;
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  padding: 0 10px;
+  width: 100%;
+  span {
+    font-weight: 600;
+  }
+  .givenName {
+    width: 25%;
+  }
+  .surname {
+    width: 20%;
+  }
+  .email {
+    width: 25%;
+  }
+  .phone {
+    width: 20%;
+  }
+  .actions {
+    width: 10%;
+  }
+}

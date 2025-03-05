@@ -1,0 +1,15 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": "last 2 versions, > 0.25%, not dead",
+        "useBuiltIns": "entry",
+        "corejs": 3
+      }
+    ], // Transpile modern JavaScript for older browsers
+    "@babel/preset-react", // Transpile JSX for React
+    "@babel/preset-typescript" // Transpile TypeScript
+  ],
+  "plugins": []
+}

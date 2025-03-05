@@ -1,0 +1,26 @@
+@use '../../../styles/variables.scss' as variables;
+
+.button {
+  background-color: variables.$primary-color;
+  border: none;
+  border-radius: 6px;
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+  color: variables.$text-color;
+  font-size: 0.9rem;
+  font-weight: 600;
+  height: 35px;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.2s ease; /* Smooth hover effect */
+  width: 40%;
+  &:hover {
+    background-color: variables.$primary-color-darker;
+  }
+  &:disabled {
+    background-color: variables.$primary-color-darker;
+    cursor: not-allowed;
+    opacity: 0.8;
+  }
+}

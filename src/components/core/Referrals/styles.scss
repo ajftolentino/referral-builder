@@ -1,0 +1,45 @@
+@use '../../../styles/variables.scss' as variables;
+
+.referrals {
+  margin: 0 auto;
+  margin-top: 55px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 99%;
+  .buttonContainer {
+    align-items: center;
+    display: flex;
+    height: 50px;
+    justify-content: flex-end;
+    padding: 0 15px;
+    width: 100%;
+    button {
+      height: 30px;
+      [class*=' icon-'],
+      [class^='icon-'] {
+        font-size: 0.7rem;
+        margin-right: 5px;
+      }
+    }
+  }
+  > p {
+    &.emptyLabel {
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 35vh;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #app {
+    overflow: scroll;
+  }
+  .referrals {
+    overflow: scroll;
+    width: 767px;
+  }
+}

@@ -1,0 +1,17 @@
+@use 'sass:color';
+
+:root {
+  --backtotop-bgcolor: gray;
+  --backtotop-opacity: 0.9;
+}
+
+$body-bg: #fdffff;
+
+$primary-color: #fff;
+$primary-color-darker: color.adjust($primary-color, $lightness: -8%);
+
+$header-box-shadow: 0 0 13px rgba(0, 0, 0, 0.8);
+$green-button: #63dd79;
+$green-button-darker: color.adjust($green-button, $lightness: -4%);
+$text-color: #000;
+$warning: #fd1f33;
