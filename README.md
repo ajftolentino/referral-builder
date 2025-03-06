@@ -40,13 +40,19 @@ API_URL=https://referral-builder-api-1d1d57f1a7a7.herokuapp.com/
 
 **(Make sure to include the `/` at the end.)**
 
-### **6. Start the Development Server**
+### **6. Install the dependencies**
+
+```sh
+npm install
+```
+
+### **7. Start the Development Server**
 
 ```sh
 npm run start
 ```
 
-### **7. Access the Web App**
+### **8. Access the Web App**
 
 Open your browser and go to:
 
