@@ -6,10 +6,10 @@ This app is built with a minimal **React + TypeScript** configuration, using **B
 
 Follow these steps to set up and run the app locally:
 
-### **1. Clone or Fork the Repository**
+### **1. Clone the Repository**
 
 ```sh
-git clone <repo-url>
+git clone git clone git@github.com:ajftolentino/referral-builder.git
 ```
 
 ### **2. Navigate to the Project Directory**
