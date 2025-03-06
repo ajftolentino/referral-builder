@@ -71,3 +71,9 @@ This project is licensed under the **MIT License**.
 ---
 
 For any issues, feel free to open a ticket or reach out to the maintainers. 🚀
+
+---
+
+## ℹ️ Post Script
+
+This setup gives you quick access to a running API server on Heroku. However, if you'd like to run your own local API server and integrate it with this frontend app, go to [Referral Builder API](https://github.com/ajftolentino/referral-builder-api) and follow the setup instructions.
